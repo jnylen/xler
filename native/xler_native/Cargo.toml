@@ -1,0 +1,15 @@
+[package]
+name = "xler_native"
+version = "0.1.0"
+authors = []
+
+[lib]
+name = "xler_native"
+path = "src/lib.rs"
+crate-type = ["dylib"]
+
+[dependencies]
+rustler = "0.20.0"
+rustler_codegen = "0.20.0"
+lazy_static = "1.0"
+calamine = "0.15.4"
