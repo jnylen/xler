@@ -14,7 +14,8 @@ defmodule Xler do
       {:ok, ["Sheet 1"]}
 
   """
-  def worksheets(filename), do: filename |> Native.worksheets()
+  def worksheets(filename) when is_binary(filename), do: filename |> Native.worksheets()
+  def worksheets(_), do: {:error, "not a string"}
 
   @doc """
   Parses a specific worksheet from a file
@@ -27,5 +28,8 @@ defmodule Xler do
       {:ok, [["Date", "Text"]]}
 
   """
-  def parse(filename, worksheet), do: filename |> Native.parse(worksheet)
+  def parse(filename, worksheet) when is_binary(filename) and is_binary(worksheet),
+    do: filename |> Native.parse(worksheet)
+
+  def worksheets(_, _), do: {:error, "not a string"}
 end
