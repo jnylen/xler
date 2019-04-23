@@ -31,5 +31,5 @@ defmodule Xler do
   def parse(filename, worksheet) when is_binary(filename) and is_binary(worksheet),
     do: filename |> Native.parse(worksheet)
 
-  def worksheets(_, _), do: {:error, "not a string"}
+  def parse(_, _), do: {:error, "not a string"}
 end
