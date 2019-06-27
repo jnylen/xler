@@ -24,3 +24,5 @@ xler-*.tar
 
 /priv
 /.elixir_ls
+
+*.xls
