@@ -4,7 +4,7 @@ defmodule Xler.MixProject do
   def project do
     [
       app: :xler,
-      version: "0.1.1",
+      version: "0.2.3",
       elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
       compilers: [:rustler] ++ Mix.compilers(),

@@ -15,7 +15,7 @@ by adding `xler` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:xler, "~> 0.1.0"}
+    {:xler, "~> 0.2.0"}
   ]
 end
 ```
