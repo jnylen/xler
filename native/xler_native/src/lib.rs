@@ -3,7 +3,7 @@
 #[macro_use] extern crate lazy_static;
 extern crate calamine;
 
-use rustler::{Env, NifResult, Encoder, Term};
+use rustler::{Env, NifResult, Encoder, Term, SchedulerFlags};
 use calamine::{Reader, open_workbook_auto};
 use calamine::Error as CaError;
 
@@ -22,8 +22,10 @@ mod atoms {
 
 rustler_export_nifs! {
     "Elixir.Xler.Native",
-    [("parse", 2, parse),
-    ("worksheets", 1, worksheets)],
+    [
+        ("parse", 2, parse, SchedulerFlags::DirtyCpu),
+        ("worksheets", 1, worksheets, SchedulerFlags::DirtyCpu)
+    ],
     None
 }
 
