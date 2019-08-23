@@ -1,6 +1,7 @@
 image: elixir:latest
 
 before_script:
+  - apt-get update
   - apt-get install -y rustc cargo
   - mix local.rebar --force
   - mix local.hex --force
