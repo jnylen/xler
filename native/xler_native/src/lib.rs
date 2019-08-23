@@ -1,6 +1,6 @@
 #[macro_use] extern crate rustler;
-#[macro_use] extern crate rustler_codegen;
-#[macro_use] extern crate lazy_static;
+extern crate rustler_codegen;
+extern crate lazy_static;
 extern crate calamine;
 
 use rustler::{Env, NifResult, Encoder, Term};
