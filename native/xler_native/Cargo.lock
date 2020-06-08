@@ -173,18 +173,18 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "rustler"
-version = "0.21.0"
+version = "0.21.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "lazy_static 1.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "rustler_codegen 0.21.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "rustler_sys 2.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rustler_codegen 0.21.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rustler_sys 2.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "which 2.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "rustler_codegen"
-version = "0.21.0"
+version = "0.21.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "heck 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -195,10 +195,10 @@ dependencies = [
 
 [[package]]
 name = "rustler_sys"
-version = "2.0.0"
+version = "2.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
- "unreachable 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "unreachable 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -228,7 +228,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "unreachable"
-version = "0.1.1"
+version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "void 1.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -250,11 +250,11 @@ dependencies = [
 
 [[package]]
 name = "xler_native"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "calamine 0.16.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "lazy_static 1.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "rustler 0.21.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rustler 0.21.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -291,14 +291,14 @@ dependencies = [
 "checksum quick-xml 0.17.0 (registry+https://github.com/rust-lang/crates.io-index)" = "aafcdba8c8d71275493d966ef052a88726ac8590c15a09968b32158205c672ef"
 "checksum quote 0.6.13 (registry+https://github.com/rust-lang/crates.io-index)" = "6ce23b6b870e8f94f81fb0a363d65d86675884b34a09043c81e5562f11c1f8e1"
 "checksum rustc-demangle 0.1.16 (registry+https://github.com/rust-lang/crates.io-index)" = "4c691c0e608126e00913e33f0ccf3727d5fc84573623b8d65b2df340b5201783"
-"checksum rustler 0.21.0 (registry+https://github.com/rust-lang/crates.io-index)" = "087d812084e88e84d09ad05abebb24e2967b287ddfa692296f742bcf3e403f93"
-"checksum rustler_codegen 0.21.0 (registry+https://github.com/rust-lang/crates.io-index)" = "62d5150810c3a06997d644cacfd0d9464441aae1d46e0bdf66cef67d379fa443"
-"checksum rustler_sys 2.0.0 (registry+https://github.com/rust-lang/crates.io-index)" = "3e2c6dd78a5cffd4294c4aca568522736b8a67f0e8ccdb6a55354dc933726bc4"
+"checksum rustler 0.21.1 (registry+https://github.com/rust-lang/crates.io-index)" = "533dc3379a0f166749ce262a941e9b52ce19c3208729fc6b6cce76aea76d939b"
+"checksum rustler_codegen 0.21.1 (registry+https://github.com/rust-lang/crates.io-index)" = "a21563a1c4b02773f5c6dce723630c9998694258ff4d67bd6025ba057a29b51c"
+"checksum rustler_sys 2.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = "9fb96034ff33723615fd19223d58c987c1f6476342e83557a6e467ef95f83bda"
 "checksum serde 1.0.102 (registry+https://github.com/rust-lang/crates.io-index)" = "0c4b39bd9b0b087684013a792c59e3e07a46a01d2322518d8a1104641a0b1be0"
 "checksum syn 0.15.44 (registry+https://github.com/rust-lang/crates.io-index)" = "9ca4b3b69a77cbe1ffc9e198781b7acb0c7365a883670e8f1c1bc66fba79a5c5"
 "checksum unicode-segmentation 1.6.0 (registry+https://github.com/rust-lang/crates.io-index)" = "e83e153d1053cbb5a118eeff7fd5be06ed99153f00dbcd8ae310c5fb2b22edc0"
 "checksum unicode-xid 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = "fc72304796d0818e357ead4e000d19c9c174ab23dc11093ac919054d20a6a7fc"
-"checksum unreachable 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)" = "1f2ae5ddb18e1c92664717616dd9549dde73f539f01bd7b77c2edb2446bdff91"
+"checksum unreachable 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)" = "382810877fe448991dfc7f0dd6e3ae5d58088fd0ea5e35189655f84e6814fa56"
 "checksum void 1.0.2 (registry+https://github.com/rust-lang/crates.io-index)" = "6a02e4885ed3bc0f2de90ea6dd45ebcbb66dacffe03547fadbb0eeae2770887d"
 "checksum which 2.0.1 (registry+https://github.com/rust-lang/crates.io-index)" = "b57acb10231b9493c8472b20cb57317d0679a49e0bdbee44b3b803a6473af164"
 "checksum zip 0.5.3 (registry+https://github.com/rust-lang/crates.io-index)" = "3c21bb410afa2bd823a047f5bda3adb62f51074ac7e06263b2c97ecdd47e9fc6"
