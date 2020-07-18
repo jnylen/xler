@@ -45,7 +45,7 @@ defmodule Xler.MixProject do
       source_ref: "master",
       main: "Xler",
       canonical: "http://hexdocs.pm/xler",
-      source_url: "https://gitlab.com/jnylen/xler",
+      source_url: "https://github.com/jnylen/xler",
       extras: [
         "README.md"
       ]
@@ -61,7 +61,7 @@ defmodule Xler.MixProject do
       files: ~w(lib .formatter.exs mix.exs README* LICENSE*
                 native),
       licenses: ["MIT"],
-      links: %{"GitLab" => "https://gitlab.com/jnylen/xler"}
+      links: %{"Github" => "https://github.com/jnylen/xler"}
     ]
   end
 end
