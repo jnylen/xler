@@ -47,8 +47,8 @@ fn worksheets<'a>(env: Env<'a>, args: &[Term<'a>]) -> NifResult<Term<'a>> {
 
 
 fn parse<'a>(env: Env<'a>, args: &[Term<'a>]) -> NifResult<Term<'a>> {
-    let filename: String = try!(args[0].decode());
-    let sheetname: String = try!(args[1].decode());
+    let filename: String = args[0].decode()?;
+    let sheetname: String = args[1].decode()?;
 
     let mut excel = match open_workbook_auto(&filename) {
         Err(ref error) => return Ok(io_error_to_term(env, error)),
@@ -60,7 +60,7 @@ fn parse<'a>(env: Env<'a>, args: &[Term<'a>]) -> NifResult<Term<'a>> {
                         .rows()
                         .into_iter()
                         .enumerate()
-                        .map(|(_i, col)| 
+                        .map(|(_i, col)|
                             col
                             .iter()
                             .map(|c|
@@ -69,7 +69,7 @@ fn parse<'a>(env: Env<'a>, args: &[Term<'a>]) -> NifResult<Term<'a>> {
                             .collect::<Vec<_>>()
                         )
                         .collect::<Vec<_>>();
-        
+
         Ok((atoms::ok(), row.encode(env)).encode(env))
     } else {
         Ok((atoms::error(), "Couldnt find the worksheet").encode(env))
