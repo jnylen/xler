@@ -1,10 +1,12 @@
 defmodule Xler.MixProject do
   use Mix.Project
 
+  @version "0.6.0"
+
   def project do
     [
       app: :xler,
-      version: "0.6.0",
+      version: @version,
       elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
       compilers: [:rustler] ++ Mix.compilers(),
