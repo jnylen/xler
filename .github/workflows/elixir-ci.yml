@@ -2,6 +2,7 @@ name: Elixir CI
 
 on: [push, pull_request]
 
+# TODO: tá quebrado
 jobs:
   build:
     runs-on: ubuntu-latest
