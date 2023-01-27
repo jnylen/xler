@@ -11,4 +11,4 @@ crate-type = ["dylib"]
 [dependencies]
 rustler = "0.23.0"
 lazy_static = "1.4"
-calamine = "0.18.0"
+calamine = { version = "0.19.0", features = ["dates"] }
