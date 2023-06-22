@@ -9,6 +9,6 @@ path = "src/lib.rs"
 crate-type = ["dylib"]
 
 [dependencies]
-rustler = "0.23.0"
+rustler = "0.29.0"
 lazy_static = "1.4"
 calamine = "0.18.0"
